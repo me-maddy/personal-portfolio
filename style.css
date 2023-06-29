@@ -1,0 +1,292 @@
+@import url("https://fonts.googleapis.com/css2?family=Piazzolla:opsz,wght@8..30,200;8..30,300;8..30,400;8..30,900&family=Poppins:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow:ital,wght@1,300&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: rgb(1, 4, 32);
+  font-size: 1.2rem;
+}
+
+header {
+  position: relative;
+  width: 100vw;
+  height: 80px;
+}
+
+nav {
+  position: fixed;
+  opacity: 0.98;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  line-height: 3.4rem;
+  color: white;
+  font-size: 1.5rem;
+  background-color: #000f2b;
+  padding: 10px 15px 10px 25px;
+}
+
+nav .left {
+  width: 30%;
+  font-style: italic;
+}
+
+nav .right {
+  position: relative;
+  width: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+nav .right ul {
+  display: flex;
+  justify-content: center;
+}
+
+nav .right ul li {
+  list-style: none;
+  margin-right: 3rem;
+  padding: 0px 12px 0px 12px;
+}
+
+nav .right ul li:last-child {
+  margin: 0;
+}
+
+.right a {
+  color: #fff;
+  text-decoration: none;
+  text-shadow: 0 0 2px grey;
+  transition: 0.09s;
+}
+
+.right a:hover {
+  text-shadow: 0px 0px 6px rgb(87, 87, 87);
+  font-weight: 501;
+}
+
+.firstSection {
+  padding: 160px 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.firstSection .leftSection {
+  border-radius: 14px;
+  color: white;
+  padding: 15px 12px;
+  min-width: 35%;
+  max-width: 70%;
+  font-size: 1.8rem;
+  line-height: 50px;
+}
+
+.firstSection .rightSection {
+  width: 30%;
+}
+
+.firstSection .rightSection img {
+  width: 100%;
+  border-radius: 50%;
+  box-shadow: -4px 0px rgb(165, 179, 245);
+}
+
+.firstSection .profession {
+  font-size: 2.3rem;
+  color: rgb(61, 61, 231);
+}
+
+.adminName {
+  font-size: 3rem;
+  font-weight: 700;
+  margin: 7px 0;
+}
+
+main hr {
+  border: 0;
+  height: 1px;
+  background-color: rgb(71, 71, 226);
+  margin: 70px 80px;
+}
+
+.secondSection {
+  color: #fff;
+  max-width: 80vw;
+  margin: 60px auto;
+}
+
+.sub-section {
+  color: rgb(234, 243, 252);
+  font-size: 1.4rem;
+  width: 100%;
+}
+
+.sub-section h1,
+.interest h1,
+.language h1 {
+  margin-bottom: 1.3rem;
+  font-family: "Playfair Display", serif;
+  font-size: 2.8rem;
+  color: rgb(71, 71, 226);
+}
+
+.sub-section .intro {
+  line-height: 35px;
+}
+
+.list-box,
+#contact div,
+.sub-section .intro,
+h3 {
+  margin-left: 4rem;
+}
+
+h3 {
+  margin-top: 1rem;
+  font-family: "Barlow", sans-serif;
+}
+
+.skill-box {
+  display: flex;
+  width: 90%;
+  justify-content: space-between;
+  margin-bottom: 1.5rem;
+  font-size: 1.5rem;
+}
+
+.level {
+  width: 70%;
+  border: 1px solid rgb(234, 243, 252);
+  border-radius: 8px;
+}
+
+#level-1 {
+  width: 70%;
+  background-color: rgb(6, 99, 3);
+}
+
+.level-val {
+  border-radius: 8px 0px 0px 8px;
+  height: 100%;
+  text-align: center;
+}
+
+#level-2,
+#level-3 {
+  background-color: blue;
+  width: 60%;
+}
+
+#level-4 {
+  background-color: rgb(128, 128, 75);
+  width: 50%;
+}
+
+.center {
+  color: rgb(148, 148, 148);
+  font-style: italic;
+  font-size: 0.9rem;
+}
+
+.edu-box {
+  margin-bottom: 1.4rem;
+}
+
+.soft-skills,
+.language div,
+.interest li,
+.education,
+#contact div {
+  font-size: 1.6rem;
+}
+
+.soft-skills li {
+  margin-bottom: 1rem;
+}
+
+.personal-interest {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.language div,
+.interest li {
+  margin-left: 2.3rem;
+}
+
+.language div span,
+#contact div span:first-child {
+  color: rgb(71, 71, 226);
+}
+
+#contact div span {
+  color: rgb(234, 243, 252);
+}
+
+.personal-interest,
+.sub-section {
+  margin-bottom: 3.4rem;
+}
+
+#framework {
+  display: flex;
+  justify-content: space-between;
+}
+
+#framework div:last-child {
+  width: 70%;
+  color: rgb(71, 71, 226);
+}
+
+.container {
+  position: absolute;
+  /* float: right; */
+  right: 0;
+  cursor: pointer;
+  display: none;
+  /* width: 100%; */
+}
+
+.bar1,
+.bar2,
+.bar3 {
+  width: 35px;
+  height: 4px;
+  background-color: blue;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+/* Rotate first bar */
+.change .bar1 {
+  transform: translate(0, 10px) rotate(-45deg);
+}
+
+/* Fade out the second bar */
+.change .bar2 {
+  opacity: 0;
+}
+
+/* Rotate last bar */
+.change .bar3 {
+  transform: translate(0, -10px) rotate(45deg);
+}
+
+.showNav {
+  flex-direction: row-reverse;
+}
+
+.showNav .list-box {
+  display: flex;
+}

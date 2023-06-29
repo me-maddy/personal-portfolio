@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Madan - PortFolio</title>
+    <link href="style.css" rel="stylesheet">
+    <link href="responsive.css" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">Hey friends</div>
+            <div class="right">
+                <div class="container" onclick="myFunction(this)">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                </div>
+                <ul class="list-box">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about-me">About me</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#contact">Contact Me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="firstSection" id="home">
+            <div class="leftSection childSection">Hi , My name is <span class="adminName">Madan</span>
+                <div>and I am a passionate </div>
+                <div class="profession"> <span id="element"></span></div>
+            </div>
+            <div class="rightSection childSection"><img src="pic1.jpg" alt="Image is in processing"></div>
+        </section>
+        <hr>
+        <section class="secondSection">
+            <div class="sub-section" id="about-me">
+                <h1 class="about heading">About me</h1>
+                <p class="intro">I am a highly motivated fresher frontend developer and results-oriented individual. I'm
+                    proficient in
+                    a variety of technologies, including HTML, CSS, JavaScript, and React. I am always eager to learn
+                    new technologies and techniques. I
+                    am also a team player and I'm always willing to collaborate with others to create the best possible
+                    product. I'm confident that I can make a significant contribution
+                    to any team, and I'm excited to see what the future holds.</p>
+                <h3>Note : I am currently looking for a position as a fresher where I can use my skills and
+                    learn new things.</h3>
+            </div>
+            <div class="sub-section" id="skills">
+                <h1 class="heading">Software Skills</h1>
+                <div class="list-box">
+                    <div class="skill-box">
+                        <div>HTML</div>
+                        <div class="level">
+                            <div class="level-val" id="level-1">
+                                70%
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill-box">
+                        <div>CSS</div>
+                        <div class="level">
+                            <div class="level-val" id="level-2">
+                                60%
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill-box">
+                        <div>JavaScript</div>
+                        <div class="level">
+                            <div class="level-val" id="level-3">
+                                60%
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill-box">
+                        <div>Reactjs</div>
+                        <div class="level">
+                            <div class="level-val" id="level-4">
+                                50%
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill-box" id="framework">
+                        <div>Bootstrap</div>
+                        <div>- Having a good knowledge of bootstrap Framework</div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="sub-section">
+                <h1 class="heading">Competency</h1>
+                <ul class="list-box soft-skills">
+                    <li>Adaptable and Agile</li>
+                    <li>Creative Thinker</li>
+                    <li>Effective Communicator</li>
+
+                    <li>Growth Oriented</li>
+                    <li>Receptive and Resourceful</li>
+                    <li>Collaborative and Proactive</li>
+                </ul>
+            </div>
+            <div class="sub-section">
+                <h1 class="heading">Education</h1>
+                <div class="list-box">
+                    <div class="edu-box">
+                        <div class="education">Bachelor of Computer Application (B.C.A)</div>
+                        <p class="center">DBRAU University [2020 - 2023]</p>
+                    </div>
+                    <div class="edu-box">
+                        <div class="education">Higher Secondary Education</div>
+                        <p class="center">BBVM Sr. Sec. School [2019 - 2020]</p>
+                    </div>
+                    <div class="edu-box">
+                        <div class="education">Secondary Education</div>
+                        <p class="center">BBVM Sr. Sec. School [2017 - 2018]</p>
+                    </div>
+                </div>
+            </div>
+            <div class="personal-interest">
+                <div class="interest">
+                    <h1 class="heading">Interests</h1>
+                    <li>Reading</li>
+                    <li>Travelling</li>
+                    <li>Coding</li>
+                    <li>Listening to Music</li>
+                </div>
+                <div class="language">
+                    <h1 class="heading">Languages</h1>
+                    <div>Hindi <span>|</span> English</div>
+                </div>
+            </div>
+            <div class="sub-section" id="contact">
+                <h1 class="heading">Get in touch</h1>
+                <div class="contact-box"><span>Email : </span><span>madan.sharma6397@gmail.com</span></div>
+                <div class="contact-box"><span>Phone : </span><span>+916397023806</span></div>
+                <div class="contact-box"><span>LinkedIn :
+                    </span><span class="social-link">https://www.linkedin.com/in/madan-sharma-9bb894256</span></div>
+            </div>
+        </section>
+    </main>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['<i>Front End</i> Developer'],
+            typeSpeed: 50,
+        });
+        function myFunction(x) {
+            x.classList.toggle("change");
+            x.parentElement.classList.toggle("showNav");
+            x.parentElement.firstElementChild.classList.toggle("toggle-check");
+        }
+    </script>
+</body>
+
+</html>
